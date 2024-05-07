@@ -651,7 +651,7 @@
     </config>
   </raModuleConfiguration>
   <raPinConfiguration>
-    <symbolicName propertyId="p304.symbolic_name" value="LCD_RESET"/>
+    <symbolicName propertyId="p304.symbolic_name" value="LCD_DISPON"/>
     <symbolicName propertyId="p400.symbolic_name" value="IRQ0"/>
     <symbolicName propertyId="p603.symbolic_name" value="DISP_BLEN"/>
     <pincfg active="false" name="RA6M3-EK.pincfg" selected="false" symbol="g_bsp_pin_cfg">

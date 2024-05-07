@@ -68,20 +68,8 @@ static void disp_init(void)
     fsp_err_t err;
     uint8_t * p_fb = &fb_background[1][0];
 
-    /* Reset the display */
-    R_IOPORT_PinWrite(&g_ioport_ctrl, LCD_RESET, BSP_IO_LEVEL_HIGH);
-
-    R_BSP_SoftwareDelay(100, BSP_DELAY_UNITS_MICROSECONDS);
-
-    /* Enable the backlight */
-    R_IOPORT_PinWrite(&g_ioport_ctrl, LCD_RESET, BSP_IO_LEVEL_LOW);
-
-    R_BSP_SoftwareDelay(100, BSP_DELAY_UNITS_MICROSECONDS);
-
-    /* Enable the backlight */
-    R_IOPORT_PinWrite(&g_ioport_ctrl, LCD_RESET, BSP_IO_LEVEL_HIGH);
-
-    R_BSP_SoftwareDelay(100, BSP_DELAY_UNITS_MICROSECONDS);
+    /* Display off the backlight */
+    R_IOPORT_PinWrite(&g_ioport_ctrl, LCD_DISPON, BSP_IO_LEVEL_LOW);
 
 
     /* Fill the Frame buffer with a colour, to zero out info from previous execution runs */
@@ -112,6 +100,9 @@ static void disp_init(void)
                                  (uint8_t *) p_fb,
                                  (display_frame_layer_t) 0);
     } while (FSP_ERR_INVALID_UPDATE_TIMING == err);
+
+    /* enable the display */
+    R_IOPORT_PinWrite(&g_ioport_ctrl, LCD_DISPON, BSP_IO_LEVEL_HIGH);
 
     /* Enable the backlight */
     R_IOPORT_PinWrite(&g_ioport_ctrl, DISP_BLEN, BSP_IO_LEVEL_HIGH);
