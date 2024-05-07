@@ -6,3 +6,4 @@ src/lvgl/*
 
 /JLinkLog.log
 /build/
+.cache/

@@ -153,9 +153,6 @@ void glcdc_callback(display_callback_args_t *p_args)
 
 static void vsync_wait_cb(lv_display_t * display)
 {
-    return;
-
-
     if(!lv_display_flush_is_last(display)) return;
 
 #if BSP_CFG_RTOS == 2              // FreeRTOS
