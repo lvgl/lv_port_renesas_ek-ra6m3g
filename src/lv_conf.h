@@ -928,6 +928,8 @@
 
 #define LV_USE_GENERIC_MIPI (LV_USE_ST7735 | LV_USE_ST7789 | LV_USE_ST7796 | LV_USE_ILI9341)
 
+#define LV_USE_RENESAS_GLCDC 1
+
 /* LVGL Windows backend */
 #define LV_USE_WINDOWS    0
 
