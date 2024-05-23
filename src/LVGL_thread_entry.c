@@ -1,4 +1,4 @@
-#include <lvgl_thread.h>
+#include <LVGL_thread.h>
 #include "lvgl.h"
 #include "port/lv_port_disp.h"
 #include "port/lv_port_indev.h"
@@ -19,7 +19,7 @@ void vApplicationMallocFailedHook( void )
 
 /* New Thread entry function */
 /* pvParameters contains TaskHandle_t */
-void lvgl_thread_entry(void *pvParameters)
+void LVGL_thread_entry(void *pvParameters)
 {
     FSP_PARAMETER_NOT_USED (pvParameters);
     fsp_err_t err;

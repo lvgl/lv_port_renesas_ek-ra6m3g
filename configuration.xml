@@ -536,7 +536,7 @@
       <stack module="module.freertos.heap.4.198003606"/>
     </context>
     <context id="rtos.awsfreertos.thread.915776018">
-      <property id="_symbol" value="lvgl_thread"/>
+      <property id="_symbol" value="LVGL_thread"/>
       <property id="rtos.awsfreertos.thread.name" value="LVGL Thread"/>
       <property id="rtos.awsfreertos.thread.stack" value="6144"/>
       <property id="rtos.awsfreertos.thread.priority" value="1"/>

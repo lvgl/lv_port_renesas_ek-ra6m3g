@@ -2,7 +2,7 @@
  *      INCLUDES
  *********************/
 #include "lv_port_indev.h"
-#include "lvgl_thread.h"
+#include "LVGL_thread.h"
 #include "touch_ft5x06/touch_ft5x06.h"
 
 

@@ -1,4 +1,4 @@
-#include "lvgl_thread.h"
+#include "LVGL_thread.h"
 
 #define FT5X06_NUM_POINTS    5
 
