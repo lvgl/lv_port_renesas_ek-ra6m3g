@@ -8,8 +8,6 @@
 
 void board_init(void)
 {
-    lv_init();
-
     /* Display off the backlight */
     R_IOPORT_PinWrite(&g_ioport_ctrl, LCD_DISPON, BSP_IO_LEVEL_LOW);
 
