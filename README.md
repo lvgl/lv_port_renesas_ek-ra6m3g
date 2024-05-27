@@ -26,7 +26,7 @@ Check out EK-RA6M3G in action, running LVGL's benchmark demo:
 ### CPU and Memory
 - **MCU:** R7FA6M3AH3CFC (Cortex-M4, 120MHz)
 - **RAM:** 640kB internal SRAM
-- **Flash:** 2MB internal, 64MB External Octo-SPI Flash
+- **Flash:** 2MB internal, 32MB external QSPI Flash
 - **GPU:** Dave2D
 
 ### Display and Touch
