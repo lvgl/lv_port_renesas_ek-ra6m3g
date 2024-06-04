@@ -10,17 +10,6 @@ The MCU has a high-performance Arm Cortex-M4 core and offers a TFT controller wi
 
 You can purchase the Renesas EK-RA6M3G board from many distributors. See the sources at https://renesas.com/ek-ra6m3g
 
-## Benchmark
-
-???
-During the benchmark 2 frame buffer were used in the external SRRAM. LVGL was configured to `LV_DISPLAY_RENDER_MODE_DIRECT` and the buffer were swapped on VSYNC to avoid tearing.
-???
-
-As observed in the video ...
-
-Check out EK-RA6M3G in action, running LVGL's benchmark demo:
-[![image](https://github.com/lvgl/lv_renesas/assets/7599318/a0a0dc0a-f96f-410a-ba71-555b3a788b61)](https://www.youtube.com/embed/LHPIqBV_MGA)
-
 ## Specification
 
 ### CPU and Memory
@@ -50,14 +39,13 @@ Check out EK-RA6M3G in action, running LVGL's benchmark demo:
 - Connect the USB cable to the `Debug` (J10) connector, next to the Ethernet port.
 
 ### Software setup
-- Install the [JLink driver](https://www.segger.com/downloads/jlink/) if not installed yet. 
-- Install [Renesas E2 Studio](https://www.renesas.com/us/en/software-tool/e-studio)
+- You can clone the repository with the following command:
+    ```
+    git clone https://github.com/lvgl/lv_port_renesas_ek-ra6m3g.git --recurse-submodules
+    ```
+    Downloading the `.zip` from GitHub doesn't work as it doesn't download the submodules.
 
-### Run the project
-Step-by-step description of setting up the project can be found in [the official LVGL documentation](https://docs.lvgl.io/master/integration/chip/renesas.html#getting-started-with-lvgl).
-
-### Debugging
-- JLink VCOM port is not available, but e2 studio provides a feature rich debugging experience.
+- Follow the *RA family* section of the [*documentation*](https://docs.lvgl.io/master/integration/chip/renesas.html#get-started-with-the-renesas-ecosystem) to prepare your environment and import the project
 
 ## Contribution and Support
 
