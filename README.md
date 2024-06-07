@@ -6,6 +6,12 @@ The EK-RA6M3G evaluation kit enables users to seamlessly evaluate the features o
 
 The MCU has a high-performance Arm Cortex-M4 core and offers a TFT controller with 2D accelerator and JPEG decoder. Additionally, it has Ethernet MAC with individual DMA and USB high-speed interface to ensure high data throughput
 
+## Benchmark
+
+[![image](https://github.com/lvgl/lv_port_renesas_ek-ra6m3g/assets/7599318/b3944a9c-c719-41f3-8aad-e08bf955c11b)
+](https://www.youtube.com/watch?v=0kar4Ee3Qic)
+
+
 ## Buy
 
 You can purchase the Renesas EK-RA6M3G board from many distributors. See the sources at https://renesas.com/ek-ra6m3g
