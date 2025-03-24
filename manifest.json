@@ -1,5 +1,5 @@
 {
-    "name": "Renesas RA8D1-EK",
+    "name": "Renesas RA6M3G-EK",
     "maintainer": "LVGL",
     "hostOperatingsystem": [
         "Linux",
