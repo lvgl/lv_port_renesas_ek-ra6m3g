@@ -39,5 +39,6 @@
     ],
     "branches": [
         "release/v9.2"
-    ]
+    ],
+    "settings": []
 }
