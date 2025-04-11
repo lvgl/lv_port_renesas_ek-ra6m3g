@@ -1,6 +1,3 @@
-[submodule "src\\lvgl"]
-	path = src\\lvgl
-	url = git@github.com:lvgl/lvgl.git
 [submodule "src/lvgl"]
 	path = src/lvgl
 	url = https://github.com/lvgl/lvgl.git
