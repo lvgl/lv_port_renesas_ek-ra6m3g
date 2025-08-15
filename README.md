@@ -1,4 +1,8 @@
+
 # LVGL ported to Renesas EK-RA6M3G
+
+**:rocket: This repository is available in the [LVGL Project Creator](https://lvgl.io/tools/project-creator), making it easy to create and customize a new project in just a few clicks.**
+
 
 ## Overview
 
