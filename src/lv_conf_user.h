@@ -9,6 +9,13 @@
     #define LV_USE_DEMO_WIDGETS 1
 #endif
 
+#define LV_USE_SYSMON 0
+
+#define LV_USE_PERF_MONITOR 0
+
+#define LV_SYSMON_GET_IDLE lv_os_get_idle_percent
+#define LV_USE_FREERTOS_TASK_NOTIFY 1
+
 #define LV_USE_TINY_TTF 1
 
 #define LV_USE_LOG 1
