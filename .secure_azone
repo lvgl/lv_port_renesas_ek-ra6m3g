@@ -124,20 +124,11 @@
             <slot name="PB00.CM4" secure="false"/>
             <slot name="PB01.CM4" secure="false"/>
         </peripheral>
-<<<<<<< HEAD
-        <peripheral name="GLCDC.CM4" security=""/>
-        <peripheral name="ICU_EXT_IRQ.CM4">
-            <slot name="ICU_EXT_IRQ0.CM4" secure="false"/>
-        </peripheral>
-        <peripheral name="IIC2.CM4" group="IIC" security=""/>
-        <peripheral name="GPT0.CM4" group="GPT" security=""/>
-=======
         <peripheral name="ICU_EXT_IRQ.CM4">
             <slot name="ICU_EXT_IRQ0.CM4" secure="false"/>
         </peripheral>
         <peripheral name="GLCDC.CM4" security=""/>
         <peripheral name="IIC2.CM4" group="IIC" security=""/>
->>>>>>> 3e6bcf4 (Update to FSP 6.3.0)
         <peripheral name="ICU.CM4">
             <slot name="IRQ0.CM4" secure="false"/>
             <slot name="IRQ1.CM4" secure="false"/>
@@ -147,10 +138,6 @@
             <slot name="IRQ5.CM4" secure="false"/>
             <slot name="IRQ6.CM4" secure="false"/>
             <slot name="IRQ7.CM4" secure="false"/>
-<<<<<<< HEAD
-            <slot name="IRQ8.CM4" secure="false"/>
-=======
->>>>>>> 3e6bcf4 (Update to FSP 6.3.0)
         </peripheral>
     </partition>
 </azone>

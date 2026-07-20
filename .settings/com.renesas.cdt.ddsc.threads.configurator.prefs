@@ -1,4 +1,8 @@
+collapse/module.driver.comms_i2c_on_comms_i2c_bus.2055703549=false
+collapse/module.driver.comms_i2c_on_comms_i2c_device.1561280451=false
 collapse/module.driver.display_on_glcdc.1156040062=false
 collapse/module.driver.drw.778777666=false
 collapse/module.driver.i2c_on_iic_master.1885294474=false
+collapse/module.lvgl.lvgl.192775701=false
+collapse/module.middleware.rm_lvgl_port.1801465075=false
 eclipse.preferences.version=1

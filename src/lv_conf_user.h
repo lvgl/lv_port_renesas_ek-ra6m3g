@@ -59,6 +59,13 @@
 #endif  /*LV_USE_LOG*/
 
 /*-------------
+ * FONTS
+ *-----------*/
+#define LV_FONT_MONTSERRAT_20 1
+#define LV_FONT_MONTSERRAT_24 1
+#define LV_FONT_MONTSERRAT_26 1
+
+/*-------------
  * Asserts
  *-----------*/
 
@@ -69,7 +76,6 @@
 #define LV_USE_ASSERT_STYLE         0   /**< Check if the styles are properly initialized. (Very fast, recommended) */
 #define LV_USE_ASSERT_MEM_INTEGRITY 0   /**< Check the integrity of `lv_mem` after critical operations. (Slow) */
 #define LV_USE_ASSERT_OBJ           0   /**< Check the object's type and existence (e.g. not deleted). (Slow) */
-
 
 #define LV_USE_XML 0
 

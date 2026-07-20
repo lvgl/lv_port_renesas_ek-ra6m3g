@@ -1,5 +1,5 @@
 FSP Configuration
-  Board "EK-RA6M3G"
+  Board "RA6|RA6M3|EK-RA6M3G"
   R7FA6M3AH3CFC
     part_number: R7FA6M3AH3CFC
     rom_size_bytes: 2097152
@@ -7,60 +7,84 @@ FSP Configuration
     data_flash_size_bytes: 65536
     package_style: LQFP
     package_pins: 176
+    number of cores: 1
     
+  R7FA6M3AH3CFC
   RA6M3
     series: 6
     
   RA6M3 Family
     Enable inline BSP IRQ functions: Enabled
-    OFS0 register settings: Independent WDT: Start Mode: IWDT is Disabled
-    OFS0 register settings: Independent WDT: Timeout Period: 2048 cycles
-    OFS0 register settings: Independent WDT: Dedicated Clock Frequency Divisor: 128
-    OFS0 register settings: Independent WDT: Window End Position:  0% (no window end position)
-    OFS0 register settings: Independent WDT: Window Start Position: 100% (no window start position)
-    OFS0 register settings: Independent WDT: Reset Interrupt Request Select: Reset is enabled
-    OFS0 register settings: Independent WDT: Stop Control: Stop counting when in Sleep, Snooze mode, or Software Standby
-    OFS0 register settings: WDT: Start Mode Select: Stop WDT after a reset (register-start mode)
-    OFS0 register settings: WDT: Timeout Period: 16384 cycles
-    OFS0 register settings: WDT: Clock Frequency Division Ratio: 128
-    OFS0 register settings: WDT: Window End Position:  0% (no window end position)
-    OFS0 register settings: WDT: Window Start Position: 100% (no window start position)
-    OFS0 register settings: WDT: Reset Interrupt Request: Reset
-    OFS0 register settings: WDT: Stop Control: Stop counting when entering Sleep mode
-    OFS1 register settings: Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
-    OFS1 register settings: Voltage Detection 0 Level: 2.80 V
-    OFS1 register settings: HOCO Oscillation Enable: HOCO oscillation is disabled after reset
-    MPU: Enable or disable PC Region 0: Disabled
-    MPU: PC0 Start: 0xFFFFFFFC
-    MPU: PC0 End: 0xFFFFFFFF
-    MPU: Enable or disable PC Region 1: Disabled
-    MPU: PC1 Start: 0xFFFFFFFC
-    MPU: PC1 End: 0xFFFFFFFF
-    MPU: Enable or disable Memory Region 0: Disabled
-    MPU: Memory Region 0 Start: 0x00FFFFFC
-    MPU: Memory Region 0 End: 0x00FFFFFF
-    MPU: Enable or disable Memory Region 1: Disabled
-    MPU: Memory Region 1 Start: 0x200FFFFC
-    MPU: Memory Region 1 End: 0x200FFFFF
-    MPU: Enable or disable Memory Region 2: Disabled
-    MPU: Memory Region 2 Start: 0x407FFFFC
-    MPU: Memory Region 2 End: 0x407FFFFF
-    MPU: Enable or disable Memory Region 3: Disabled
-    MPU: Memory Region 3 Start: 0x400DFFFC
-    MPU: Memory Region 3 End: 0x400DFFFF
+    SDRAM: SDRAM Support: Disabled
+    SDRAM: Timings: tRAS (cycles): 6 cycles
+    SDRAM: Timings: tRCD (cycles): 3 cycles
+    SDRAM: Timings: tRP (cycles): 3 cycles
+    SDRAM: Timings: tWR (cycles): 2 cycles
+    SDRAM: Timings: tCL (cycles): 3 cycles
+    SDRAM: Timings: tRFC (cycles): 937
+    SDRAM: Timings: tREFW (cycles): 8 cycles
+    SDRAM: Initialization: Auto-Refresh Interval (ARFI): 10 cycles
+    SDRAM: Initialization: Auto-Refresh Count (ARFC): 8 times
+    SDRAM: Initialization: Precharge Cycle Count (PRC): 3 cycles
+    SDRAM: Address Multiplex Shift: 9-bit shift
+    SDRAM: Endian Mode: Little Endian
+    SDRAM: Continuous Access Mode: Enabled
+    SDRAM: Bus Width: 16-bit
     Clocks: HOCO FLL Function: Disabled
-    Main Oscillator Wait Time: 8163 cycles
-    ID Code Mode: Unlocked (Ignore ID)
-    ID Code (32 Hex Characters): FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    Clocks: MOSC Drive Capability Auto Switching: Disabled
+    Clocks: Main Oscillator Wait Time: 8163 cycles
+    
+  RA6M3 Device Options
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Enabled
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Start Mode: IWDT is stopped after a reset
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Timeout Period: 2048 cycles
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Dedicated Clock Frequency Divisor: 128
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Window End Position:  0% (no window end position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Window Start Position: 100% (no window start position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Reset Interrupt Request Select: Reset is enabled
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Stop Control: Stop counting when in Sleep,Snooze modec, or Software Standby
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Start Mode Select: Stop WDT after a reset (register-start mode)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Timeout Period: 16384 cycles
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Clock Frequency Division Ratio: 128
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Window End Position:  0% (no window end position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Window Start Position: 100% (no window start position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Reset Interrupt Request: Reset
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Stop Control: Stop counting when entering Sleep mode
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Enabled
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Voltage Detection 0 Level: 2.80 V
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: HOCO Oscillation Enable: HOCO oscillation is disabled after reset
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: PC 0 Enable: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: PC 0 Start: 0xFFFFFFFC
+    OFS Registers: SECMPU (Security MPU Registers) Settings: PC 0 End: 0xFFFFFFFF
+    OFS Registers: SECMPU (Security MPU Registers) Settings: PC 1 Enable: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: PC 1 Start: 0xFFFFFFFC
+    OFS Registers: SECMPU (Security MPU Registers) Settings: PC 1 End: 0xFFFFFFFF
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 0 Enable: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 0 Start: 0x001FFFFC
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 0 End: 0x001FFFFF
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 1 Enable: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 1 Start: 0x2007FFFC
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 1 End: 0x2007FFFF
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 2 Enable: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 2 Start: 0x400DFFFC
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 2 End: 0x400DFFFF
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 3 Enable: Disabled
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 3 Start: 0x400DFFFC
+    OFS Registers: SECMPU (Security MPU Registers) Settings: Region 3 End: 0x400DFFFF
+    OFS Registers: OSIS (OCD/Serial Programmer ID setting register) Settings: Disabled
+    OFS Registers: OSIS (OCD/Serial Programmer ID setting register) Settings: ID Code Mode: Unlocked (Ignore ID)
+    OFS Registers: OSIS (OCD/Serial Programmer ID setting register) Settings: ID Code (32 Hex Characters): FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     
   RA6M3 event data
   RA Common
     Main stack size (bytes): 0x400
     Heap size (bytes): 0
+    Bootloader Secondary XIP: Disabled
     MCU Vcc (mV): 3300
     Parameter checking: Enabled
     Assert Failures: Return FSP_ERR_ASSERTION
-    Error Log: No Error Log
     Clock Registers not Reset Values during Startup: Disabled
     Main Oscillator Populated: Populated
     PFS Protect: Enabled
@@ -78,6 +102,7 @@ FSP Configuration
     PLL Div /2
     PLL Mul x20.0
     Clock Src: PLL
+    UCLK Src: PLL
     ICLK Div /2
     PCLKA Div /2
     PCLKB Div /4
@@ -145,7 +170,7 @@ FSP Configuration
       P301 87 - - Low None Disabled CMOS None "AGT0: AGTIO; BUS0: A06; GLCDC0: LCD_DATA13; GPT4: GTIOCB; IRQ0: IRQ06; OPS0: GTOULO; SCI2: RXD_MISO; SCI2: SCL; SCI9: CTS_RTS_SS; SPI1: SSL2" - IO - - 
       P302 86 - - Low None Disabled CMOS None "BUS0: A07; GLCDC0: LCD_DATA14; GPT4: GTIOCA; IRQ0: IRQ05; OPS0: GTOUUP; SCI2: SDA; SCI2: TXD_MOSI; SPI1: SSL3" - IO - - 
       P303 85 - - Low - Disabled CMOS None "BUS0: A08; GLCDC0: LCD_DATA15; GPT7: GTIOCB" - IO - - 
-      P304 82 GPIO LCD_RESET Low None "Output mode (Initial High)" CMOS None "BUS0: A09; GLCDC0: LCD_DATA16; GPT7: GTIOCA; IRQ0: IRQ09; OPS0: GTOWLO; SCI6: RXD_MISO; SCI6: SCL" - IO - - 
+      P304 82 GPIO TOUCH_RESET Low None "Output mode (Initial High)" CMOS None "BUS0: A09; GLCDC0: LCD_DATA16; GPT7: GTIOCA; IRQ0: IRQ09; OPS0: GTOWLO; SCI6: RXD_MISO; SCI6: SCL" - IO - - 
       P305 81 QSPI0_QSPCLK - High None "Peripheral mode" CMOS None "BUS0: A10; GLCDC0: LCD_DATA17; IRQ0: IRQ08; OPS0: GTOWUP; QSPI0: QSPCLK; SCI6: SDA; SCI6: TXD_MOSI" - IO - - 
       P306 80 QSPI0_QSSL - High - "Peripheral mode" CMOS None "BUS0: A11; GLCDC0: LCD_DATA18; OPS0: GTOULO; QSPI0: QSSL; SCI6: SCK" - IO - - 
       P307 79 QSPI0_QIO0 - High - "Peripheral mode" CMOS None "BUS0: A12; GLCDC0: LCD_DATA19; OPS0: GTOUUP; QSPI0: QIO0; SCI6: CTS_RTS_SS" - IO - - 
@@ -322,7 +347,7 @@ FSP Configuration
       P301 87 - - Low None Disabled CMOS None "AGT0: AGTIO; BUS0: A06; GLCDC0: LCD_DATA13; GPT4: GTIOCB; IRQ0: IRQ06; OPS0: GTOULO; SCI2: RXD_MISO; SCI2: SCL; SCI9: CTS_RTS_SS; SPI1: SSL2" - IO - - 
       P302 86 - - Low None Disabled CMOS None "BUS0: A07; GLCDC0: LCD_DATA14; GPT4: GTIOCA; IRQ0: IRQ05; OPS0: GTOUUP; SCI2: SDA; SCI2: TXD_MOSI; SPI1: SSL3" - IO - - 
       P303 85 - - Low - Disabled CMOS None "BUS0: A08; GLCDC0: LCD_DATA15; GPT7: GTIOCB" - IO - - 
-      P304 82 - LCD_RESET Low None Disabled CMOS None "BUS0: A09; GLCDC0: LCD_DATA16; GPT7: GTIOCA; IRQ0: IRQ09; OPS0: GTOWLO; SCI6: RXD_MISO; SCI6: SCL" - IO - - 
+      P304 82 - TOUCH_RESET Low None Disabled CMOS None "BUS0: A09; GLCDC0: LCD_DATA16; GPT7: GTIOCA; IRQ0: IRQ09; OPS0: GTOWLO; SCI6: RXD_MISO; SCI6: SCL" - IO - - 
       P305 81 - - Low None Disabled CMOS None "BUS0: A10; GLCDC0: LCD_DATA17; IRQ0: IRQ08; OPS0: GTOWUP; QSPI0: QSPCLK; SCI6: SDA; SCI6: TXD_MOSI" - IO - - 
       P306 80 - - Low - Disabled CMOS None "BUS0: A11; GLCDC0: LCD_DATA18; OPS0: GTOULO; QSPI0: QSSL; SCI6: SCK" - IO - - 
       P307 79 - - Low - Disabled CMOS None "BUS0: A12; GLCDC0: LCD_DATA19; OPS0: GTOUUP; QSPI0: QIO0; SCI6: CTS_RTS_SS" - IO - - 
@@ -499,7 +524,7 @@ FSP Configuration
       P301 87 GLCDC0_LCD_DATA13 - High None "Peripheral mode" CMOS None "AGT0: AGTIO; BUS0: A06; GLCDC0: LCD_DATA13; GPT4: GTIOCB; IRQ0: IRQ06; OPS0: GTOULO; SCI2: RXD_MISO; SCI2: SCL; SCI9: CTS_RTS_SS; SPI1: SSL2" - IO - - 
       P302 86 GLCDC0_LCD_DATA14 - High None "Peripheral mode" CMOS None "BUS0: A07; GLCDC0: LCD_DATA14; GPT4: GTIOCA; IRQ0: IRQ05; OPS0: GTOUUP; SCI2: SDA; SCI2: TXD_MOSI; SPI1: SSL3" - IO - - 
       P303 85 GLCDC0_LCD_DATA15 - High - "Peripheral mode" CMOS None "BUS0: A08; GLCDC0: LCD_DATA15; GPT7: GTIOCB" - IO - - 
-      P304 82 GPIO LCD_RESET Low None "Output mode (Initial High)" CMOS None "BUS0: A09; GLCDC0: LCD_DATA16; GPT7: GTIOCA; IRQ0: IRQ09; OPS0: GTOWLO; SCI6: RXD_MISO; SCI6: SCL" - IO - - 
+      P304 82 GPIO TOUCH_RESET Low None "Output mode (Initial High)" CMOS None "BUS0: A09; GLCDC0: LCD_DATA16; GPT7: GTIOCA; IRQ0: IRQ09; OPS0: GTOWLO; SCI6: RXD_MISO; SCI6: SCL" - IO - - 
       P305 81 QSPI0_QSPCLK - High None "Peripheral mode" CMOS None "BUS0: A10; GLCDC0: LCD_DATA17; IRQ0: IRQ08; OPS0: GTOWUP; QSPI0: QSPCLK; SCI6: SDA; SCI6: TXD_MOSI" - IO - - 
       P306 80 QSPI0_QSSL - High - "Peripheral mode" CMOS None "BUS0: A11; GLCDC0: LCD_DATA18; OPS0: GTOULO; QSPI0: QSSL; SCI6: SCK" - IO - - 
       P307 79 QSPI0_QIO0 - High - "Peripheral mode" CMOS None "BUS0: A12; GLCDC0: LCD_DATA19; OPS0: GTOUUP; QSPI0: QIO0; SCI6: CTS_RTS_SS" - IO - - 
@@ -628,8 +653,14 @@ FSP Configuration
     
   User Event Links
     
+  Linker Section Mappings
+    *bsp_linker.?*(.rodata.*): FLASH Constant Data (OFS Gap)
+    *(.bss.g_heap): RAM Uninitialized
+    *(.bss.g_main_stack): RAM Uninitialized
+    
   Module "I/O Port (r_ioport)"
     Parameter Checking: Default (BSP)
+    CCD Support: config.driver.ioport.ccd_support_enable.disabled
     
   Module "FreeRTOS Port (rm_freertos_port)"
   Module "Graphics LCD (r_glcdc)"
@@ -648,19 +679,87 @@ FSP Configuration
     DTC on Transmission and Reception: Enabled
     10-bit slave addressing: Disabled
     
-  Module "Timer, General PWM (r_gpt)"
-    Parameter Checking: Default (BSP)
-    Pin Output Support: Disabled
-    Write Protect Enable: Disabled
-    
   Module "FreeRTOS Heap 4"
   Module "D/AVE 2D Port Interface (r_drw)"
     Allow Indirect Mode: Enabled
     Memory Allocation: Default
     
   Module "D/AVE 2D (r_drw)"
+  Module "LVGL"
+    General: Custom lv_conf.h: lv_conf_user.h
+    LVGL: Display: LV_COLOR_DEPTH: 16
+    LVGL: Memory: LV_MEM_SIZE: 0x10000
+    LVGL: Memory: LV_DRAW_LAYER_SIMPLE_BUF_SIZE: 0x6000
+    LVGL: Memory: LV_DRAW_LAYER_MAX_MEMORY: 0
+    LVGL: Memory: LV_DRAW_THREAD_STACK_SIZE: 0x2000
+    LVGL: OS Integration: LV_USE_OS: LV_OS_FREERTOS
+    LVGL: OS Integration: LV_DRAW_THREAD_PRIO: LV_THREAD_PRIO_HIGH
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_RGB565: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_RGB565_SWAPPED: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_RGB565A8: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_RGB888: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_XRGB8888: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_ARGB8888: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_ARGB8888_PREMULTIPLIED: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_L8: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_AL88: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_A8: Enabled
+    LVGL: Software Rendering: LV_DRAW_SW_SUPPORT_I1: Enabled
+    LVGL: Hardware Rendering: LV_USE_DRAW_DAVE2D: Enabled
+    LVGL: Debug: LV_ASSERT_HANDLER_INCLUDE: <stdint.h>
+    LVGL: Debug: LV_ASSERT_HANDLER: 
+    LVGL: Widgets: LV_USE_OBJ_NAME: Disabled
+    LVGL: Input Devices: LV_USE_GESTURE_RECOGNITION: Disabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_8: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_10: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_12: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_14: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_16: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_18: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_20: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_22: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_24: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_26: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_28: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_30: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_32: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_34: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_36: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_38: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_40: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_42: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_44: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_46: Enabled
+    LVGL: Fonts: Montserrat: LV_FONT_MONTSERRAT_48: Enabled
+    LVGL: Fonts: DejaVu: LV_FONT_DEJAVU_16_PERSIAN_HEBREW: Enabled
+    LVGL: Fonts: SourceHanSansSC: LV_FONT_SOURCE_HAN_SANS_SC_14_CJK: Enabled
+    LVGL: Fonts: SourceHanSansSC: LV_FONT_SOURCE_HAN_SANS_SC_16_CJK: Enabled
+    LVGL: Fonts: Unscii: LV_FONT_UNSCII_8: Enabled
+    LVGL: Fonts: Unscii: LV_FONT_UNSCII_16: Enabled
+    LVGL: Fonts: LV_FONT_DEFAULT: lv_font_montserrat_14
+    LVGL: Fonts: LV_USE_FONT_PLACEHOLDER: Enabled
+    LVGL: Fonts: LV_USE_BIDI: Disabled
+    LVGL: Fonts: LV_USE_ARABIC_PERSIAN_CHARS: Disabled
+    LVGL: Input Devices: LV_USE_IME_PINYIN: Disabled
+    LVGL: Input Devices: LV_IME_PINYIN_USE_DEFAULT_DICT: Enabled
+    LVGL: Input Devices: LV_IME_PINYIN_CAND_TEXT_NUM: 6
+    LVGL: Input Devices: LV_IME_PINYIN_USE_K9_MODE: Enabled
+    LVGL: Input Devices: LV_IME_PINYIN_K9_CAND_TEXT_NUM: 3
+    LVGL: Fonts: LV_USE_FONT_MANAGER: Disabled
+    LVGL: Fonts: LV_FONT_MANAGER_NAME_MAX_LEN: 32
+    
+  Module "LVGL Port (rm_lvgl_port)"
+    Parameter Checking: Default (BSP)
+    Provide Tick Callback: Enabled
+    
+  Module "I2C Shared Bus (rm_comms_i2c)"
+    Parameter Checking: Default (BSP)
+    
+  Module "I2C Communication Device (rm_comms_i2c)"
+    Parameter Checking: Default (BSP)
+    
   FreeRTOS
-    General: Custom FreeRTOSConfig.h: 
+    General: Custom FreeRTOSConfig.h: User_FreeRTOSConfig.h
     General: Use Preemption: Enabled
     General: Use Port Optimised Task Selection: Disabled
     General: Use Tickless Idle: Disabled
@@ -678,8 +777,9 @@ FSP Configuration
     General: Use 16-bit Ticks: Disabled
     General: Idle Should Yield: Enabled
     General: Use Task Notifications: Enabled
+    General: Task Notification Array Entries: 1
     General: Use Mutexes: Enabled
-    General: Use Recursive Mutexes: Disabled
+    General: Use Recursive Mutexes: Enabled
     General: Use Counting Semaphores: Enabled
     Hooks: Check For Stack Overflow: Disabled
     General: Queue Registry Size: 10
@@ -700,7 +800,7 @@ FSP Configuration
     Timers: Timer Task Priority: 3
     Timers: Timer Queue Length: 10
     Timers: Timer Task Stack Depth: 128
-    General: Library Max Syscall Interrupt Priority: Priority 1
+    General: Library Max Syscall Interrupt Priority: board.icu.common.irq.priority1
     General: Assert: assert(x)
     General: Include Application Defined Privileged Functions: Disabled
     Optional Functions: vTaskPrioritySet() Function: Enabled
@@ -729,10 +829,10 @@ FSP Configuration
   HAL
     Instance "g_ioport I/O Port (r_ioport)"
       Name: g_ioport
-      1st Port ELC Trigger Source: Disabled
-      2nd Port ELC Trigger Source: Disabled
-      3rd Port ELC Trigger Source: Disabled
-      4th Port ELC Trigger Source: Disabled
+      1st Port ELC Trigger Source: _disabled
+      2nd Port ELC Trigger Source: _disabled
+      3rd Port ELC Trigger Source: _disabled
+      4th Port ELC Trigger Source: _disabled
       Pin Configuration Name: g_bsp_pin_cfg
       
     Instance "FreeRTOS Port (rm_freertos_port)"
@@ -746,293 +846,257 @@ FSP Configuration
     Memory Allocation: Static
     Allocate Secure Context: Enable
     
-    Instance "g_display0 Graphics LCD (r_glcdc)"
-      General: Name: g_display0
-      Interrupts: Callback Function: glcdc_callback
-      Interrupts: Line Detect Interrupt Priority: Priority 12
-      Interrupts: Underflow 1 Interrupt Priority: Priority 12
-      Interrupts: Underflow 2 Interrupt Priority: Disabled
-      Input: Graphics Layer 1: General: Enabled: Yes
-      Input: Graphics Layer 1: General: Horizontal size: 480
-      Input: Graphics Layer 1: General: Vertical size: 272
-      Input: Graphics Layer 1: General: Horizontal position: 0
-      Input: Graphics Layer 1: General: Vertical position: 0
-      Input: Graphics Layer 1: Background Color: Alpha: 255
-      Input: Graphics Layer 1: Background Color: Red: 255
-      Input: Graphics Layer 1: Background Color: Green: 255
-      Input: Graphics Layer 1: Background Color: Blue: 255
-      Input: Graphics Layer 1: Framebuffer: Framebuffer name: fb_background
-      Input: Graphics Layer 1: Framebuffer: Number of framebuffers: 2
-      Input: Graphics Layer 1: Framebuffer: Section for framebuffer allocation: .bss
-      Input: Graphics Layer 1: General: Color format: RGB565 (16-bit)
-      Input: Graphics Layer 1: General: Line descending mode: Disabled
-      Input: Graphics Layer 1: Line Repeat: Enable: Off
-      Input: Graphics Layer 1: Line Repeat: Repeat count: 0
-      Input: Graphics Layer 1: Fading: Mode: None
-      Input: Graphics Layer 1: Fading: Speed: 0
-      Input: Graphics Layer 2: General: Enabled: No
-      Input: Graphics Layer 2: General: Horizontal size: 480
-      Input: Graphics Layer 2: General: Vertical size: 272
-      Input: Graphics Layer 2: General: Horizontal position: 0
-      Input: Graphics Layer 2: General: Vertical position: 0
-      Input: Graphics Layer 2: Background Color: Alpha: 255
-      Input: Graphics Layer 2: Background Color: Red: 255
-      Input: Graphics Layer 2: Background Color: Green: 255
-      Input: Graphics Layer 2: Background Color: Blue: 255
-      Input: Graphics Layer 2: Framebuffer: Framebuffer name: fb_foreground
-      Input: Graphics Layer 2: Framebuffer: Number of framebuffers: 2
-      Input: Graphics Layer 2: Framebuffer: Section for framebuffer allocation: .bss
-      Input: Graphics Layer 2: General: Color format: RGB565 (16-bit)
-      Input: Graphics Layer 2: General: Line descending mode: Disabled
-      Input: Graphics Layer 2: Line Repeat: Enable: Off
-      Input: Graphics Layer 2: Line Repeat: Repeat count: 0
-      Input: Graphics Layer 2: Fading: Mode: None
-      Input: Graphics Layer 2: Fading: Speed: 0
-      Output: Timing: Horizontal total cycles: 525
-      Output: Timing: Horizontal active video cycles: 480
-      Output: Timing: Horizontal back porch cycles: 40
-      Output: Timing: Horizontal sync signal cycles: 1
-      Output: Timing: Horizontal sync signal polarity: Low active
-      Output: Timing: Vertical total lines: 316
-      Output: Timing: Vertical active video lines: 272
-      Output: Timing: Vertical back porch lines: 8
-      Output: Timing: Vertical sync signal lines: 1
-      Output: Timing: Vertical sync signal polarity: Low active
-      Output: Timing: Data Enable Signal Polarity: High active
-      Output: Timing: Sync edge: Rising edge
-      Output: Format: Color format: 16bits RGB565
-      Output: Format: Color order: RGB
-      Output: Format: Endian: Little endian
-      Output: Background: Alpha: 255
-      Output: Background: Red: 0
-      Output: Background: Green: 0
-      Output: Background: Blue: 0
-      CLUT: Enabled: No
-      CLUT: Size: 256
-      TCON: Hsync pin select: LCD_TCON0
-      TCON: Vsync pin select: LCD_TCON1
-      TCON: Data enable (DE) pin select: LCD_TCON2
-      TCON: Panel clock source: Internal clock (GLCDCLK)
-      TCON: Panel clock division ratio: 1/24
-      Color Correction: Process order: Brightness/contrast first
-      Color Correction: Brightness: Enabled: No
-      Color Correction: Brightness: Red channel: 512
-      Color Correction: Brightness: Green channel: 512
-      Color Correction: Brightness: Blue channel: 512
-      Color Correction: Contrast: Enabled: No
-      Color Correction: Contrast: Red channel gain: 128
-      Color Correction: Contrast: Green channel gain: 128
-      Color Correction: Contrast: Blue channel gain: 128
-      Color Correction: Gamma: Red: Off
-      Color Correction: Gamma: Green: Off
-      Color Correction: Gamma: Blue: Off
-      Color Correction: Gamma: Table Mode: Variable
-      Color Correction: Gamma: Tables: Red: Gain: 0: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 1: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 2: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 3: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 4: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 5: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 6: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 7: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 8: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 9: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 10: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 11: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 12: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 13: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 14: 1024
-      Color Correction: Gamma: Tables: Red: Gain: 15: 1024
-      Color Correction: Gamma: Tables: Red: Threshold: 1: 64
-      Color Correction: Gamma: Tables: Red: Threshold: 2: 128
-      Color Correction: Gamma: Tables: Red: Threshold: 3: 192
-      Color Correction: Gamma: Tables: Red: Threshold: 4: 256
-      Color Correction: Gamma: Tables: Red: Threshold: 5: 320
-      Color Correction: Gamma: Tables: Red: Threshold: 6: 384
-      Color Correction: Gamma: Tables: Red: Threshold: 7: 448
-      Color Correction: Gamma: Tables: Red: Threshold: 8: 512
-      Color Correction: Gamma: Tables: Red: Threshold: 9: 576
-      Color Correction: Gamma: Tables: Red: Threshold: 10: 640
-      Color Correction: Gamma: Tables: Red: Threshold: 11: 704
-      Color Correction: Gamma: Tables: Red: Threshold: 12: 768
-      Color Correction: Gamma: Tables: Red: Threshold: 13: 832
-      Color Correction: Gamma: Tables: Red: Threshold: 14: 896
-      Color Correction: Gamma: Tables: Red: Threshold: 15: 960
-      Color Correction: Gamma: Tables: Green: Gain: 0: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 1: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 2: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 3: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 4: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 5: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 6: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 7: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 8: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 9: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 10: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 11: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 12: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 13: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 14: 1024
-      Color Correction: Gamma: Tables: Green: Gain: 15: 1024
-      Color Correction: Gamma: Tables: Green: Threshold: 1: 64
-      Color Correction: Gamma: Tables: Green: Threshold: 2: 128
-      Color Correction: Gamma: Tables: Green: Threshold: 3: 192
-      Color Correction: Gamma: Tables: Green: Threshold: 4: 256
-      Color Correction: Gamma: Tables: Green: Threshold: 5: 320
-      Color Correction: Gamma: Tables: Green: Threshold: 6: 384
-      Color Correction: Gamma: Tables: Green: Threshold: 7: 448
-      Color Correction: Gamma: Tables: Green: Threshold: 8: 512
-      Color Correction: Gamma: Tables: Green: Threshold: 9: 576
-      Color Correction: Gamma: Tables: Green: Threshold: 10: 640
-      Color Correction: Gamma: Tables: Green: Threshold: 11: 704
-      Color Correction: Gamma: Tables: Green: Threshold: 12: 768
-      Color Correction: Gamma: Tables: Green: Threshold: 13: 832
-      Color Correction: Gamma: Tables: Green: Threshold: 14: 896
-      Color Correction: Gamma: Tables: Green: Threshold: 15: 960
-      Color Correction: Gamma: Tables: Blue: Gain: 0: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 1: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 2: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 3: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 4: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 5: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 6: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 7: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 8: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 9: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 10: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 11: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 12: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 13: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 14: 1024
-      Color Correction: Gamma: Tables: Blue: Gain: 15: 1024
-      Color Correction: Gamma: Tables: Blue: Threshold: 1: 64
-      Color Correction: Gamma: Tables: Blue: Threshold: 2: 128
-      Color Correction: Gamma: Tables: Blue: Threshold: 3: 192
-      Color Correction: Gamma: Tables: Blue: Threshold: 4: 256
-      Color Correction: Gamma: Tables: Blue: Threshold: 5: 320
-      Color Correction: Gamma: Tables: Blue: Threshold: 6: 384
-      Color Correction: Gamma: Tables: Blue: Threshold: 7: 448
-      Color Correction: Gamma: Tables: Blue: Threshold: 8: 512
-      Color Correction: Gamma: Tables: Blue: Threshold: 9: 576
-      Color Correction: Gamma: Tables: Blue: Threshold: 10: 640
-      Color Correction: Gamma: Tables: Blue: Threshold: 11: 704
-      Color Correction: Gamma: Tables: Blue: Threshold: 12: 768
-      Color Correction: Gamma: Tables: Blue: Threshold: 13: 832
-      Color Correction: Gamma: Tables: Blue: Threshold: 14: 896
-      Color Correction: Gamma: Tables: Blue: Threshold: 15: 960
-      Dithering: Enabled: No
-      Dithering: Mode: Truncate
-      Dithering: Pattern A: Pattern 11
-      Dithering: Pattern B: Pattern 11
-      Dithering: Pattern C: Pattern 11
-      Dithering: Pattern D: Pattern 11
-      
     Instance "g_touch_irq External IRQ (r_icu)"
       Name: g_touch_irq
       Channel: 0
-      Trigger: Falling
-      Digital Filtering: Enabled
-      Digital Filtering Sample Clock (Only valid when Digital Filtering is Enabled): PCLK / 64
-      Callback: touch_irq_cb
-      Pin Interrupt Priority: Priority 5
+      Trigger: module.driver.external_irq.trigger.trig_falling
+      Digital Filtering: module.driver.external_irq.filter_enable.true
+      Filter Source: module.driver.external_irq.filter_source.pclk
+      Digital Filtering Sample Clock (Only valid when Digital Filtering is Enabled): module.driver.external_irq.clock_source_div.clock_source_div_by_64
+      Callback: touch_irq_callback
+      Pin Interrupt Priority: board.icu.common.irq.priority5
       
-    Instance "g_i2c_touch I2C Master (r_iic_master)"
-      Name: g_i2c_touch
-      Channel: 2
-      Rate: Fast-mode
-      Rise Time (ns): 120
-      Fall Time (ns): 120
-      Duty Cycle (%): 50
+    Instance "LVGL"
+      Instance "LVGL Port (rm_lvgl_port)"
+        Name: g_rm_lvgl_port0
+        Target Display Layer: Graphics Layer 1
+        Callback Function: NULL
+        Dynamic renderer control variable: gp_dave2d_enable
+        
+        Instance "g_display0 Graphics LCD (r_glcdc)"
+          General: Name: g_display0
+          Interrupts: Callback Function: glcdc_callback
+          Interrupts: Line Detect Interrupt Priority: board.icu.common.irq.priority12
+          Interrupts: Underflow 1 Interrupt Priority: board.icu.common.irq.priority12
+          Interrupts: Underflow 2 Interrupt Priority: _disabled
+          Input: Graphics Layer 1: General: Enabled: Yes
+          Input: Graphics Layer 1: General: Horizontal size: 480
+          Input: Graphics Layer 1: General: Vertical size: 272
+          Input: Graphics Layer 1: General: Horizontal position: 0
+          Input: Graphics Layer 1: General: Vertical position: 0
+          Input: Graphics Layer 1: Framebuffer: Framebuffer name: fb_background
+          Input: Graphics Layer 1: Framebuffer: Number of framebuffers: 2
+          Input: Graphics Layer 1: Framebuffer: Section for framebuffer allocation: .bss
+          Input: Graphics Layer 1: General: Color format: RGB565 (16-bit)
+          Input: Graphics Layer 1: General: Line descending mode: Disabled
+          Input: Graphics Layer 1: Line Repeat: Enable: Off
+          Input: Graphics Layer 1: Line Repeat: Repeat count: 0
+          Input: Graphics Layer 1: Fading: Mode: None
+          Input: Graphics Layer 1: Fading: Speed: 0
+          Input: Graphics Layer 2: General: Enabled: No
+          Input: Graphics Layer 2: General: Horizontal size: 480
+          Input: Graphics Layer 2: General: Vertical size: 272
+          Input: Graphics Layer 2: General: Horizontal position: 0
+          Input: Graphics Layer 2: General: Vertical position: 0
+          Input: Graphics Layer 2: Framebuffer: Framebuffer name: fb_foreground
+          Input: Graphics Layer 2: Framebuffer: Number of framebuffers: 2
+          Input: Graphics Layer 2: Framebuffer: Section for framebuffer allocation: .bss
+          Input: Graphics Layer 2: General: Color format: RGB565 (16-bit)
+          Input: Graphics Layer 2: General: Line descending mode: Disabled
+          Input: Graphics Layer 2: Line Repeat: Enable: Off
+          Input: Graphics Layer 2: Line Repeat: Repeat count: 0
+          Input: Graphics Layer 2: Fading: Mode: None
+          Input: Graphics Layer 2: Fading: Speed: 0
+          Output: Timing: Horizontal total cycles: 525
+          Output: Timing: Horizontal active video cycles: 480
+          Output: Timing: Horizontal back porch cycles: 40
+          Output: Timing: Horizontal sync signal cycles: 1
+          Output: Timing: Horizontal sync signal polarity: Low active
+          Output: Timing: Vertical total lines: 316
+          Output: Timing: Vertical active video lines: 272
+          Output: Timing: Vertical back porch lines: 8
+          Output: Timing: Vertical sync signal lines: 1
+          Output: Timing: Vertical sync signal polarity: Low active
+          Output: Timing: Data Enable Signal Polarity: High active
+          Output: Timing: Sync edge: Rising edge
+          Output: Format: Color format: 16bits RGB565
+          Output: Format: Color order: RGB
+          Output: Format: Endian: Little endian
+          Output: Background: Alpha: 255
+          Output: Background: Red: 0
+          Output: Background: Green: 0
+          Output: Background: Blue: 0
+          CLUT: Enabled: No
+          CLUT: Size: 256
+          TCON: Hsync pin select: LCD_TCON0
+          TCON: Vsync pin select: LCD_TCON1
+          TCON: Data enable (DE) pin select: LCD_TCON2
+          TCON: Panel clock source: Internal clock (GLCDCLK)
+          TCON: Panel clock division ratio: 1/24
+          Color Correction: Process order: Brightness/contrast first
+          Color Correction: Brightness: Enabled: No
+          Color Correction: Brightness: Red channel: 512
+          Color Correction: Brightness: Green channel: 512
+          Color Correction: Brightness: Blue channel: 512
+          Color Correction: Contrast: Enabled: No
+          Color Correction: Contrast: Red channel gain: 128
+          Color Correction: Contrast: Green channel gain: 128
+          Color Correction: Contrast: Blue channel gain: 128
+          Color Correction: Gamma: Red: Off
+          Color Correction: Gamma: Green: Off
+          Color Correction: Gamma: Blue: Off
+          Color Correction: Gamma: Table Mode: Variable
+          Color Correction: Gamma: Tables: Red: Gain: 0: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 1: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 2: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 3: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 4: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 5: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 6: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 7: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 8: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 9: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 10: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 11: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 12: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 13: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 14: 1024
+          Color Correction: Gamma: Tables: Red: Gain: 15: 1024
+          Color Correction: Gamma: Tables: Red: Threshold: 1: 64
+          Color Correction: Gamma: Tables: Red: Threshold: 2: 128
+          Color Correction: Gamma: Tables: Red: Threshold: 3: 192
+          Color Correction: Gamma: Tables: Red: Threshold: 4: 256
+          Color Correction: Gamma: Tables: Red: Threshold: 5: 320
+          Color Correction: Gamma: Tables: Red: Threshold: 6: 384
+          Color Correction: Gamma: Tables: Red: Threshold: 7: 448
+          Color Correction: Gamma: Tables: Red: Threshold: 8: 512
+          Color Correction: Gamma: Tables: Red: Threshold: 9: 576
+          Color Correction: Gamma: Tables: Red: Threshold: 10: 640
+          Color Correction: Gamma: Tables: Red: Threshold: 11: 704
+          Color Correction: Gamma: Tables: Red: Threshold: 12: 768
+          Color Correction: Gamma: Tables: Red: Threshold: 13: 832
+          Color Correction: Gamma: Tables: Red: Threshold: 14: 896
+          Color Correction: Gamma: Tables: Red: Threshold: 15: 960
+          Color Correction: Gamma: Tables: Green: Gain: 0: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 1: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 2: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 3: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 4: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 5: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 6: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 7: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 8: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 9: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 10: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 11: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 12: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 13: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 14: 1024
+          Color Correction: Gamma: Tables: Green: Gain: 15: 1024
+          Color Correction: Gamma: Tables: Green: Threshold: 1: 64
+          Color Correction: Gamma: Tables: Green: Threshold: 2: 128
+          Color Correction: Gamma: Tables: Green: Threshold: 3: 192
+          Color Correction: Gamma: Tables: Green: Threshold: 4: 256
+          Color Correction: Gamma: Tables: Green: Threshold: 5: 320
+          Color Correction: Gamma: Tables: Green: Threshold: 6: 384
+          Color Correction: Gamma: Tables: Green: Threshold: 7: 448
+          Color Correction: Gamma: Tables: Green: Threshold: 8: 512
+          Color Correction: Gamma: Tables: Green: Threshold: 9: 576
+          Color Correction: Gamma: Tables: Green: Threshold: 10: 640
+          Color Correction: Gamma: Tables: Green: Threshold: 11: 704
+          Color Correction: Gamma: Tables: Green: Threshold: 12: 768
+          Color Correction: Gamma: Tables: Green: Threshold: 13: 832
+          Color Correction: Gamma: Tables: Green: Threshold: 14: 896
+          Color Correction: Gamma: Tables: Green: Threshold: 15: 960
+          Color Correction: Gamma: Tables: Blue: Gain: 0: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 1: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 2: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 3: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 4: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 5: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 6: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 7: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 8: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 9: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 10: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 11: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 12: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 13: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 14: 1024
+          Color Correction: Gamma: Tables: Blue: Gain: 15: 1024
+          Color Correction: Gamma: Tables: Blue: Threshold: 1: 64
+          Color Correction: Gamma: Tables: Blue: Threshold: 2: 128
+          Color Correction: Gamma: Tables: Blue: Threshold: 3: 192
+          Color Correction: Gamma: Tables: Blue: Threshold: 4: 256
+          Color Correction: Gamma: Tables: Blue: Threshold: 5: 320
+          Color Correction: Gamma: Tables: Blue: Threshold: 6: 384
+          Color Correction: Gamma: Tables: Blue: Threshold: 7: 448
+          Color Correction: Gamma: Tables: Blue: Threshold: 8: 512
+          Color Correction: Gamma: Tables: Blue: Threshold: 9: 576
+          Color Correction: Gamma: Tables: Blue: Threshold: 10: 640
+          Color Correction: Gamma: Tables: Blue: Threshold: 11: 704
+          Color Correction: Gamma: Tables: Blue: Threshold: 12: 768
+          Color Correction: Gamma: Tables: Blue: Threshold: 13: 832
+          Color Correction: Gamma: Tables: Blue: Threshold: 14: 896
+          Color Correction: Gamma: Tables: Blue: Threshold: 15: 960
+          Dithering: Enabled: No
+          Dithering: Mode: Truncate
+          Dithering: Pattern A: Pattern 11
+          Dithering: Pattern B: Pattern 11
+          Dithering: Pattern C: Pattern 11
+          Dithering: Pattern D: Pattern 11
+          
+        Instance "D/AVE 2D Port Interface (r_drw)"
+          D2 Device Handle Name: d2_handle0
+          DRW Interrupt Priority: board.icu.common.irq.priority2
+          
+          Instance "D/AVE 2D (r_drw)"
+    Instance "g_comms_i2c_device0 I2C Communication Device (rm_comms_i2c)"
+      Name: g_comms_i2c_device0
+      Semaphore Timeout (RTOS only): 0xFFFFFFFF
       Slave Address: 0x38
       Address Mode: 7-Bit
-      Timeout Mode: Short Mode
-      Timeout during SCL Low: Enabled
-      Callback: touch_i2c_callback
-      Interrupt Priority Level: Priority 6
+      Callback: comms_i2c_callback
       
-      Instance "g_transfer2 Transfer (r_dtc) IIC2 TXI (Transmit data empty)"
-        Name: g_transfer2
-        Mode: Normal
-        Transfer Size: 1 Byte
-        Destination Address Mode: Fixed
-        Source Address Mode: Incremented
-        Repeat Area (Unused in Normal Mode): Source
-        Interrupt Frequency: After all transfers have completed
-        Number of Transfers: 0
-        Number of Blocks (Valid only in Block Mode): 0
-        Number of Transfer Descriptors: 1
-        Activation Source: IIC2 TXI (Transmit data empty)
+      Instance "g_comms_i2c_bus0 I2C Shared Bus (rm_comms_i2c)"
+        Name: g_comms_i2c_bus0
+        Bus Timeout: 0xFFFFFFFF
+        Semaphore for Blocking (RTOS only): Use
+        Recursive Mutex for Bus (RTOS only): Use
+        Channel: 2
+        Rate: Fast-mode
         
-      Instance "g_transfer3 Transfer (r_dtc) IIC2 RXI (Receive data full)"
-        Name: g_transfer3
-        Mode: Normal
-        Transfer Size: 1 Byte
-        Destination Address Mode: Incremented
-        Source Address Mode: Fixed
-        Repeat Area (Unused in Normal Mode): Destination
-        Interrupt Frequency: After all transfers have completed
-        Number of Transfers: 0
-        Number of Blocks (Valid only in Block Mode): 0
-        Number of Transfer Descriptors: 1
-        Activation Source: IIC2 RXI (Receive data full)
-        
-    Instance "g_timer0 Timer, General PWM (r_gpt)"
-      General: Name: g_timer0
-      General: Channel: 0
-      General: Mode: Periodic
-      General: Period: 1
-      General: Compare Match: Compare Match A: Status: Disabled
-      General: Compare Match: Compare Match A: Compare match value: 0
-      General: Compare Match: Compare Match B: Status: Disabled
-      General: Compare Match: Compare Match B: Compare match value: 0
-      General: Period Unit: Milliseconds
-      Output: Custom Waveform: GTIOA: Initial Output Level: Pin Level Low
-      Output: Custom Waveform: GTIOA: Cycle End Output Level: Pin Level Retain
-      Output: Custom Waveform: GTIOA: Compare Match Output Level: Pin Level Retain
-      Output: Custom Waveform: GTIOA: Retain Output Level at Count Stop: Disabled
-      Output: Custom Waveform: GTIOB: Initial Output Level: Pin Level Low
-      Output: Custom Waveform: GTIOB: Cycle End Output Level: Pin Level Retain
-      Output: Custom Waveform: GTIOB: Compare Match Output Level: Pin Level Retain
-      Output: Custom Waveform: GTIOB: Retain Output Level at Count Stop: Disabled
-      Output: Custom Waveform: Custom Waveform Enable: Disabled
-      Output: Duty Cycle Percent (only applicable in PWM mode): 50
-      Output: GTIOCA Output Enabled: False
-      Output: GTIOCA Stop Level: Pin Level Low
-      Output: GTIOCB Output Enabled: False
-      Output: GTIOCB Stop Level: Pin Level Low
-      Input: Count Up Source: 
-      Input: Count Down Source: 
-      Input: Start Source: 
-      Input: Stop Source: 
-      Input: Clear Source: 
-      Input: Capture A Source: 
-      Input: Capture B Source: 
-      Input: Noise Filter A Sampling Clock Select: No Filter
-      Input: Noise Filter B Sampling Clock Select: No Filter
-      Interrupts: Callback: timer_tick_callback
-      Interrupts: Overflow/Crest Interrupt Priority: Priority 8
-      Interrupts: Capture/Compare match A Interrupt Priority: Disabled
-      Interrupts: Capture/Compare match B Interrupt Priority: Disabled
-      Interrupts: Underflow/Trough Interrupt Priority: Disabled
-      Extra Features: Extra Features: Disabled
-      Extra Features: Output Disable: POEG Link: POEG Channel 0
-      Extra Features: Output Disable: Output Disable POEG Trigger: 
-      Extra Features: ADC Trigger: Start Event Trigger (Channels with GTINTAD only): 
-      Extra Features: ADC Trigger: ADC A Compare Match (Raw Counts): 0
-      Extra Features: ADC Trigger: ADC B Compare Match (Raw Counts): 0
-      Extra Features: Dead Time (Value range varies with Channel): Dead Time Count Up (Raw Counts): 0
-      Extra Features: Dead Time (Value range varies with Channel): Dead Time Count Down (Raw Counts) (Channels with GTDVD only): 0
-      Extra Features: Interrupt Skipping (Channels with GTITC only): Interrupt to Count: None
-      Extra Features: Interrupt Skipping (Channels with GTITC only): Interrupt Skip Count: 0
-      Extra Features: Interrupt Skipping (Channels with GTITC only): Skip ADC Events: None
-      Extra Features: Output Disable: GTIOCA Disable Setting: Disable Prohibited
-      Extra Features: Output Disable: GTIOCB Disable Setting: Disable Prohibited
-      
-    Instance "D/AVE 2D Port Interface (r_drw)"
-      D2 Device Handle Name: d2_handle0
-      DRW Interrupt Priority: Priority 2
-      
-      Instance "D/AVE 2D (r_drw)"
+        Instance "g_i2c_touch I2C Master (r_iic_master)"
+          Name: g_i2c_touch
+          Channel: 2
+          Rate: Fast-mode
+          Custom Rate (bps): 0
+          Rise Time (ns): 120
+          Fall Time (ns): 120
+          Duty Cycle (%): 50
+          Slave Address: 0x38
+          Address Mode: 7-Bit
+          Timeout Mode: Short Mode
+          Timeout during SCL Low: Enabled
+          Callback: touch_i2c_callback
+          Interrupt Priority Level: board.icu.common.irq.priority6
+          
+          Instance "g_transfer2 Transfer (r_dtc) _disabled"
+            Name: g_transfer2
+            Mode: Normal
+            Transfer Size: module.driver.transfer.size.size_2_byte
+            Destination Address Mode: Fixed
+            Source Address Mode: Fixed
+            Repeat Area (Unused in Normal Mode): Source
+            Interrupt Frequency: After all transfers have completed
+            Number of Transfers: 0
+            Number of Blocks (Valid only in Block Mode): 0
+            Number of Transfer Descriptors: 1
+            Activation Source: _disabled
+            
+          Instance "g_transfer3 Transfer (r_dtc) _disabled"
+            Name: g_transfer3
+            Mode: Normal
+            Transfer Size: module.driver.transfer.size.size_2_byte
+            Destination Address Mode: Fixed
+            Source Address Mode: Fixed
+            Repeat Area (Unused in Normal Mode): Source
+            Interrupt Frequency: After all transfers have completed
+            Number of Transfers: 0
+            Number of Blocks (Valid only in Block Mode): 0
+            Number of Transfer Descriptors: 1
+            Activation Source: _disabled
+            
   Object "_SemaphoreVsync Binary Semaphore"
     Symbol: _SemaphoreVsync
     Memory Allocation: Static
